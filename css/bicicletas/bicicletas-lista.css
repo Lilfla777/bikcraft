@@ -1,0 +1,15 @@
+.bicicletas-lista{
+    padding-top: 60px;
+    padding-bottom: 120px;
+   
+}
+.bicicletas-lista h2{
+    margin-bottom: 40px;
+}
+.bicicletas-lista ul{
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
