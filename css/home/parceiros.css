@@ -15,8 +15,8 @@ padding: 0 30px;
 
 }
 .parceiros li{
-border-bottom:2px solid var(--cor-5) ;
-border-left: 2px solid var(--cor-5);
+border-bottom:2px solid var(--cor-3) ;
+border-left: 2px solid var(--cor-3);
 display: flex;
 padding: 32px;
 }
@@ -44,6 +44,6 @@ border-bottom: none;
         border-left: none;
     }
     .parceiros li:nth-child(5), .parceiros li:nth-child(6){
-        border-bottom:2px solid var(--cor-5)
+        border-bottom:2px solid var(--cor-3)
     }
 }

@@ -76,11 +76,15 @@ p {
 .icone h3,
 p {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 
 @media(max-width: 800px) {
+    .icone{
+       
+        flex-wrap: wrap;
+    }
 
     .tecnologia-conteudo {
         grid-template-columns: 1fr;
@@ -96,17 +100,23 @@ p {
 
     .tecnologia-conteudo-area {
         padding-top: 40px;
-        padding-bottom: 0px;
+        margin-bottom: 40px;
 
     }
    
-    .icone{
-        flex-wrap: wrap;
     
-    }
 }
 @media(max-width: 600px){
     .icone{
         flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .link{
+        font-size: 1.2rem;
+    }
+    .tecnologia-conteudo-area {
+        padding-top: px;
+        margin-bottom: 20px;
+
     }
 }
