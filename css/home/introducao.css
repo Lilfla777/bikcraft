@@ -7,13 +7,13 @@
 .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 0 40px;
     
 }
 .introducao img{
     object-fit: cover;
     height:100%;
-    border-radius: 4px;
+   
     
 }
 
@@ -59,7 +59,7 @@
         margin-bottom: 16px;
     }
     .introducao img{
-      height: 300px;
+    
       width: 100%;
     }
     .introducao-conteudo{
