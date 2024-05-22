@@ -1,6 +1,7 @@
 .seguros-bg{
     background-color: var(--cor-11);
     padding-top: 40px;
+    padding-bottom: 60px;
 }
 .seguros{
     display: grid;
@@ -80,6 +81,9 @@
     }
     .seguros-itens li{
         padding-bottom: 10px;
+    }
+    .seguros-bg{
+        padding-bottom: 40px;
     }
     
 }

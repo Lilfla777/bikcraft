@@ -61,7 +61,16 @@
     
 }
 @media(max-width:600px){
-    
+    .depoimentos {
+        grid-template-columns: 1fr;
+
+    }
+    .depoimentos img {
+        max-height: 300px;
+        object-fit: cover;
+        width: 100%;
+
+    }
     .depoimentos-conteudo p{
      font-size: 1.3rem;
     }

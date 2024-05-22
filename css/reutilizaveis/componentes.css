@@ -5,6 +5,10 @@
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     color: var(--cor-p5);
+    font: 600 1.125rem / 1.35 "Poppins", sans-serif;
+    border: none;
+    cursor: pointer;
+    max-width: max-content;
     
 }
 .botao:hover{
@@ -31,4 +35,14 @@
     text-transform: uppercase;
     position: relative;
     padding-bottom: 8px;
+}
+.ativo::after{
+    content: " " ;
+    position: absolute !important;
+    width: 100%!important;
+    height: 2px;
+    background-color: #fff;
+}
+.ativo{
+    position: relative ;
 }
