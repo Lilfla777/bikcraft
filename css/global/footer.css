@@ -1,46 +1,79 @@
-
-.footer-bg{
+.footer-bg {
     background-color: var(--cor-12);
     padding-bottom: 60px;
 }
-.footer-area{
+
+.footer-area {
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
-    
+
     color: var(--cor-0);
     padding-top: 60px;
 }
-.footer-contato, .footer-info{
-    padding:  0 32px;
+
+.footer-contato,
+.footer-info {
+    padding: 0 32px;
 }
-.footer-area ul{
+
+.footer-area ul {
     color: var(--cor-5);
     font: 500 1.125rem/1.35 "Poppins", sans-serif;
 }
-.footer-area li{
+
+.footer-area li {
     margin: 20px 0;
 }
-.footer-contato li:nth-child(2), .footer-contato li:nth-child(4){
+
+.footer-contato li:nth-child(2),
+.footer-contato li:nth-child(4) {
     border-bottom: 1px solid var(--cor-10);
     padding-bottom: 20px;
 }
 
-.redes{
+footer span {
+    grid-column: 1/-1;
+    margin-top: 60px;
+}
+
+footer a:hover {
+    color: var(--cor-0);
+}
+
+.redes {
     display: flex;
     gap: 30px;
-    margin-top: 50px;
-}
+    margin-top: 60px;
 
-@media(max-width:800px){
 
 }
-@media(max-width:600px){
-    .footer-area{
+
+#bicicleta .footer-bg {
+  
+    border: none;
+}
+
+
+@media(max-width:600px) {
+    .footer-area {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    .footer-bg{
+
+    .footer-bg {
         padding-bottom: 30px;
     }
-   
+
+    .redes {
+        margin-bottom: 30px;
+        justify-content: space-around;
+    }
+
+    footer span {
+
+        margin-top: 20px;
+    }
+    #bicicleta .footer-bg{
+        box-shadow:initial;
+    }
 }

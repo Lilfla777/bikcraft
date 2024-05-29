@@ -1,0 +1,130 @@
+
+/*nimbus, margic e nebula*/
+
+.biciletas-bg {
+    background-color: var(--cor-11);
+    padding: 50px 0;
+
+
+}
+.bicicleta-titulo{
+    grid-column: 1 / -1;
+}
+
+.bicicletas-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+
+}
+
+.bicicletas-img img:first-child {
+    min-width: 100%;
+
+}
+
+.bicicletas-img img {
+    flex: 1;
+    min-width: 200px;
+    cursor: pointer;
+    
+}
+
+.bicicletas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.botao-grid {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px;
+    margin: 40px 0;
+}
+
+.botao-grid a {
+    grid-row: span 2;
+
+}
+
+.botao-grid span {
+    display: flex;
+    gap: 10px;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+    padding: 5px 10px;
+
+}
+
+.descricao-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20PX;
+    background-color: var(--cor-12);
+    padding: 32px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.descricao-grid img {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+.descricao-flex {
+    padding: 32px;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+    margin: 10px 0;
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    color: var(--cor-6);
+}
+
+.descricao-flex li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-11);
+    padding: 5px 0;
+}
+
+.descricao-flex li:last-child {
+    border: none;
+}
+
+.descricao-flex span {
+    color: var(--cor-1);
+}
+
+@media(max-width:800px){
+    .bicicletas-grid{
+        grid-template-columns: 1fr;
+    }
+    .bicicletas-img{
+        grid-row: 3;
+    }
+    .descricao-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:600px){
+    .bicicletas-grid{
+        grid-template-columns: 1fr;
+    }
+    .bicicletas-img{
+        grid-row: initial;
+    }
+   #bicicleta .bicicletas-lista ul{
+    flex-wrap: wrap;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+   }
+}
+
+
+/*AREA DE SEGUROS*/

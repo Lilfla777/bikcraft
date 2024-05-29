@@ -1,19 +1,20 @@
 .biciletas-bg {
     background-color: var(--cor-11);
     padding: 50px 0px;
+ 
 }
 
 .nimbus-bg {
     background-color: var(--cor-0);
-    padding: 60px 0px;
+    padding: 10px;
 
 }
 
 .magic-bg {
-    padding-top: 10px;
+    padding: 10px;
     background-color: var(--cor-11);
     box-shadow: inset 500px 0 #fff;
-
+    border-radius: 4px;
 }
 
 .bicicleta-content {
@@ -82,7 +83,7 @@
     height: 10px;
     display: inline-block;
     margin-left: 8px;
-  
+
 }
 
 .bicicleta-img {
@@ -104,10 +105,11 @@
     padding: 10px;
     border-radius: 4px;
 }
+
 /*solução alternativa para o position absolute*/
-.copy{
-   margin-top: 60px;
-   display: block;
+.copy {
+    margin-top: 60px;
+    display: block;
 }
 
 @media(max-width: 800px) {
@@ -140,13 +142,13 @@
         grid-template-columns: 1fr auto;
     }
 
-    .bicicleta-content-desc ul{
+    .bicicleta-content-desc ul {
         font-size: 1rem;
         grid-column: 1 / -1;
     }
 
     .bicicleta-content-desc a {
-        grid-row:6;
-       
+        grid-row: 6;
+
     }
 }

@@ -8,6 +8,9 @@
 
 
 }
+#bicicleta .tecnologia-bg{
+    box-shadow:inset 0 130px var(--cor-0),inset  0 -130px var(--cor-12);
+}
 
 .tecnologia-conteudo {
     display: grid;
@@ -93,8 +96,11 @@ p {
     .tecnologia-conteudo-img {
         display: none;
     }
+    #bicicleta .tecnologia-conteudo-img {
+        display: flex;
+    }
 
-    .tecnologia-bg {
+    .tecnologia-bg, #bicicleta .tecnologia-bg {
         box-shadow: initial;
     }
 

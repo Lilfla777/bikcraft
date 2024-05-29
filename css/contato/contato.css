@@ -1,0 +1,125 @@
+#contato{
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0%);
+}
+.contato-titulo{
+padding: 60px 0;
+}
+.contato-grid{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+.contato-lista{
+    background-color: var(--cor-12);
+    color: var(--cor-4);
+    padding: 60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+ 
+}
+.adress, .email, .phone{
+    position: relative;
+    display: inline;
+}
+.email::before{
+    content: " ";
+    width: 18px;
+    height: 18px;
+    background: url(./../../img/icones/email.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+  left: -30px;
+  position: absolute;
+}
+.phone::before{
+    content: " ";
+    width: 18px;
+    height: 18px;
+    background: url(./../../img/icones/telefone.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+  left: -30px;
+  position: absolute;
+}
+.email:hover,.phone:hover{
+color: var(--cor-0);
+}
+.adress::before{
+    content: " ";
+    width: 18px;
+    height: 18px;
+    background: url(./../../img/icones/local.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+  left: -30px;
+  position: absolute;
+}
+.contato-lista h3{
+    color: var(--cor-0);
+    padding: 0 130px 0 0px;
+   
+}
+.contato-lista ul{
+    margin-bottom: 30px;
+    font: 400 1rem/1.7 "Roboto", sans-serif;
+   padding-left: 20px;    
+}
+
+.contato-lista h3{
+    margin-bottom: 60px;
+}
+
+.redes{
+    margin-left: 20px;
+}
+
+/*INICIO DO FORMULÁRIO*/
+.contato-form{
+    background-color: var(--cor-0);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 60px;
+}
+.form label{
+    display: block;
+    margin-bottom: 10px;
+}
+.form input[type="text"],.form input[type="email"], .form textarea{
+    font: 400 1rem / 1.5 "Roboto", sans-serif;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--cor-1);
+    background-color: var(--cor-1);
+    border-radius: 4px;
+    
+}
+.form input[type="text"]:focus,.form input[type="email"]:focus, .form textarea:focus{
+  outline: none;
+  border-color: var(--cor-p1);
+}
+.form .botao{
+    margin-top: 10px;
+}
+.form .col-2{
+    grid-column: span 2;
+}
+@media(max-width:800px){
+    .contato-grid{
+        grid-template-columns: 1fr;
+    }
+    .form{
+       display: flex;
+       flex-direction: column;
+       padding: 20px;  
+    }
+    .botao{
+        padding: 15px 20px;
+        
+    }
+}
