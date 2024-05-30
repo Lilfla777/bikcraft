@@ -131,3 +131,11 @@
   border-color: var(--cor-0);
   color: var(--cor-11);
 }
+@media(max-width:600px){
+  .orcamento{
+    grid-template-columns: 1fr;
+  }
+  .orcamento-produto{
+  padding-bottom: 30px;
+  }
+}
