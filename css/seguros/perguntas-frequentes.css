@@ -28,10 +28,14 @@
 
 }
 
-.perguntas-conteudo dd {
+.perguntas-conteudo dd { 
+    display: none; 
+}
+.js-faq dd.ativar{
     max-width: 80ch;
-    padding-top: 15px;
-    color: var(--cor-9);   
+    padding-top: 25px;
+    color: var(--cor-9); 
+    display: block;
 }
 
 .perguntas-conteudo dt::before {
@@ -40,7 +44,10 @@
     width: 12px;
     background-color: var(--cor-p1);
     margin-right: 8px;
+   
 }
+
+
 
 .perguntas-conteudo dt::after {
     content: " ";

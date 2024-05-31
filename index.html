@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -45,10 +46,13 @@
                     você. Explore o mundo na sua velocidade com a Bikcraft.</p>
                 <a class="botao font-1-m-b" href="./bicicletas.html">ESCOLHA A SUA</a>
             </div>
-            <div>
-
-                <img src="./img/fotos/introducao.jpg" alt="Bicicleta Elétrica Preta">
-            </div>
+            
+                <picture> 
+                    <source media="(max-width: 600px)" srcset="../img/bicicletas/nimbus.jpg">
+                    <img src="./img/fotos/introducao.jpg" alt="Bicicleta Elétrica Preta">
+                </picture>
+                
+            
         </div>
     </main>
     <article class="bicicletas-lista">
@@ -222,6 +226,8 @@
             <span class="font-1-m cor-5">Bikcraft © Alguns direitos reservados.</span>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
