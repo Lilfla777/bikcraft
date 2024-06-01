@@ -28,16 +28,12 @@ const pergunta = document.querySelectorAll(".js-faq dt");
 const resposta = document.querySelectorAll(".js-faq dd")
 
 function faq() {
-    
-
    
     function activeResp(index) {
 
         resposta[index].classList.toggle("ativar");
 
     }
-
-  
 
     pergunta.forEach((itemPerg, index) => {
         itemPerg.addEventListener('click', function () {
@@ -49,8 +45,22 @@ faq();
 
 
 //galeria de bicicletas
-const galeria = document.querySelector(".bicicletas-img img");
-console.log(galeria)
-const galeriaContainer = document.querySelectorAll
+const galeria = document.querySelectorAll(".bicicletas-img img");
 
+const galeriaContainer = document.querySelector(".bicicletas-img");
+
+
+function trocarImagem(event) {
+    const img = event.currentTarget;
+   const media = window.matchMedia('(min-width: 1000px)').matches;
+    if(media){
+        galeriaContainer.prepend(img);
+
+    }
+}
+
+function eventosGaleria(img) {
+    img.addEventListener('click', trocarImagem );
+}
+galeria.forEach(eventosGaleria);
 
